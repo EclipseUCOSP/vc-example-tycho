@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.ucosp.tycho.feature_1.0.0.qualifier.jar" id="org.ucosp.tycho.feature" version="1.0.0.qualifier"/>
+</site>

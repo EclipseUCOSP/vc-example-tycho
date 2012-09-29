@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>org.ucosp.tycho.p2updatesite</name>
+	<comment></comment>
+	<projects>
+		<project>org.ucosp.tycho.feature</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>
