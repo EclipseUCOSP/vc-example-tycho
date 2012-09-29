@@ -5,7 +5,7 @@
    <extension
          point="org.eclipse.ui.commands">
       <category
-            name="Sample Category"
+            name="UCOSP Eclipse Tycho Category"
             id="org.ucosp.tycho.plugin.commands.category">
       </category>
       <command
@@ -35,7 +35,7 @@
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu?after=additions">
          <menu
-               label="Sample Menu"
+               label="UCOSP Eclipse Plugin"
                mnemonic="M"
                id="org.ucosp.tycho.plugin.menus.sampleMenu">
             <command
