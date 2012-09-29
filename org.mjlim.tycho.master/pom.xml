@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.mjlim</groupId>
+  <artifactId>parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>../org.mjlim.tycho.plugin</module>
+    <module>../org.mjlim.tycho.feature</module>
+    <module>../org.mjlim.tycho.p2updatesite</module>
+  </modules>
+  <!-- upload over sftp
+  <distributionManagement>
+  	<repository>
+  		<id>mjlim-sfu</id>
+  		<url>sftp://fraser.sfu.ca/home/mjlim/ucosp</url>
+  	</repository>
+  </distributionManagement>
+  -->
+
+  <properties>
+    <tycho-version>0.15.0</tycho-version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>juno</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/juno</url>
+    </repository>
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-director-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <executions>
+          <execution>
+            <id>materialize-products</id>
+            <goals>
+              <goal>materialize-products</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>archive-products</id>
+            <goals>
+              <goal>archive-products</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+	<!-- upload over sftp 
+    <extensions>
+    	<extension>
+    		<groupId>org.apache.maven.wagon</groupId>
+    		<artifactId>wagon-ssh</artifactId>
+    	</extension>
+    </extensions>
+	-->
+  </build>
+
+</project> 
