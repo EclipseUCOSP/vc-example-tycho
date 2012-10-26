@@ -15,6 +15,14 @@
     <tycho-version>0.15.0</tycho-version>
   </properties>
 
+  <distributionManagement>
+    <repository>
+      <id>ucosp</id>
+      <name>UCOSP Snapshots</name>
+      <url>http://lts.eclipse.org/nexus/content/repositories/snapshots</url>
+    </repository>
+  </distributionManagement>
+
   <repositories>
     <repository>
       <id>juno</id>
