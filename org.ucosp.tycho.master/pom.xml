@@ -11,6 +11,13 @@
     <module>../org.ucosp.tycho.p2updatesite</module>
   </modules>
 
+  <pluginRepositories>
+    <pluginRepository>
+      <id>ucosp</id>
+      <name>UCOSP Repository - Snapshots</name>
+      <url>http://lts.eclipse.org/nexus/content/repositories/snapshots/</url>
+    </pluginRepository>
+  </pluginRepositories>
   <properties>
     <tycho-version>0.15.0</tycho-version>
   </properties>
@@ -59,6 +66,24 @@
           </execution>
         </executions>
       </plugin>
+		<plugin>
+		  <groupId>org.ucosp.eclipse</groupId>
+		  <artifactId>mvn-p2-vt-plugin</artifactId>
+		  <version>1.1-SNAPSHOT</version>
+		  <executions>
+			  <execution>
+				  <phase>package</phase>
+				  <goals>
+					<goal>callVC</goal>
+			      </goals>
+			  </execution>
+		  </executions>
+		  <configuration>
+			  <repositoryRoot>${basedir}/../.git</repositoryRoot>
+			  <mvnVersion>${unqualifiedVersion}${buildQualifier}</mvnVersion> <!-- get version from Tycho --> <!-- TODO: change from mvnVersion to a different parameter -->
+		  </configuration>
+	  	</plugin>
+
     </plugins>
   </build>
 
