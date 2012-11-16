@@ -79,8 +79,7 @@
 			  </execution>
 		  </executions>
 		  <configuration>
-			  <repositoryRoot>${basedir}/../.git</repositoryRoot>
-			  <mvnVersion>${unqualifiedVersion}${buildQualifier}</mvnVersion> <!-- get version from Tycho --> <!-- TODO: change from mvnVersion to a different parameter -->
+			  <p2Version>${unqualifiedVersion}${buildQualifier}</p2Version> <!-- get version from Tycho --> <!-- TODO: change from mvnVersion to a different parameter -->
 		  </configuration>
 	  	</plugin>
 
