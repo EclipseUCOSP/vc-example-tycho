@@ -1,0 +1,3 @@
+[submodule "sm"]
+	path = sm
+	url = git://github.com/EclipseUCOSP/sm.git

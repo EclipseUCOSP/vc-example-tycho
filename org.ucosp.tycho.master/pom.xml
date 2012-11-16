@@ -9,6 +9,7 @@
     <module>../org.ucosp.tycho.plugin</module>
     <module>../org.ucosp.tycho.feature</module>
     <module>../org.ucosp.tycho.p2updatesite</module>
+    <module>../sm</module>
   </modules>
 
   <pluginRepositories>
