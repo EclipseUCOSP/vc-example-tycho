@@ -79,9 +79,6 @@
 			      </goals>
 			  </execution>
 		  </executions>
-		  <configuration>
-			  <p2Version>${unqualifiedVersion}${buildQualifier}</p2Version> <!-- get version from Tycho --> <!-- TODO: change from mvnVersion to a different parameter -->
-		  </configuration>
 	  	</plugin>
 
     </plugins>
