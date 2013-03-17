@@ -1,3 +1,4 @@
-[submodule "sm"]
-	path = sm
-	url = git://github.com/EclipseUCOSP/sm.git
+
+[submodule "vc-example-tycho-submodule"]
+	path = vc-example-tycho-submodule
+	url = https://github.com/EclipseUCOSP/vc-example-tycho-submodule.git
