@@ -12,5 +12,5 @@
   <artifactId>org.ucosp.tycho.plugin</artifactId>
   <packaging>eclipse-plugin</packaging>
 
-  <name>Tycho Test Build</name>
+  <name>Plugin Test Build</name>
 </project> 
